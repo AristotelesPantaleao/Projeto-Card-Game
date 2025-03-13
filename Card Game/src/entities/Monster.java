@@ -99,6 +99,7 @@ public class Monster extends Card {
 			setAtack(2500);
 			setDefense(2100);
 			setHasEffect(false);
+			setDescription("Sem efeito");
 		}else if(getName().equals("Neo Aqua Mador")){
 			setType("Monster");
 			setLevel(6);
@@ -107,6 +108,7 @@ public class Monster extends Card {
 			setAtack(1200);
 			setDefense(3000);
 			setHasEffect(false);
+			setDescription("Sem efeito");
 		}else if(getName().equals("Aqua Mador")) {
 			setType("Monster");
 			setLevel(4);
@@ -345,5 +347,43 @@ public class Monster extends Card {
 		}
 	}
 	
-	
+	public String showAtackOrDefenseOfYourMonster(Player player, String monster) {
+		if(player.getArchetype() == 1) {
+			if(monster.equals("Mago Negro")) {
+				setName("Mago Negro");
+				setType("Monster");
+				setLevel(7);
+				setAtribute("Dark");
+				setTypeOfMonster("Mage");
+				setAtack(2500);
+				setDefense(2100);
+				setHasEffect(false);
+				setDescription("Sem efeito");
+				return this.getName() + " possui " + getAtack() + " de ataque e " + getDefense() + " de defesa. É nível " + getLevel() + " atributo " + getAtribute() + " e tipo " + getTypeOfMonster() + "Efeito: " + getDescription();
+			}else if(monster.equals("Neo Aqua Mador")) {
+				setName("Neo Aqua Mador");
+				setType("Monster");
+				setLevel(6);
+				setAtribute("Water");
+				setTypeOfMonster("Mage");
+				setAtack(1200);
+				setDefense(3000);
+				setHasEffect(false);
+				setDescription("Sem efeito");
+				return this.getName() + " possui " + getAtack() + " de ataque e " + getDefense() + " de defesa. É nível " + getLevel() + " atributo " + getAtribute() + " e tipo " + getTypeOfMonster() + "Efeito: " + getDescription();
+			}else if(monster.equals("Aqua Mador")) {
+				
+			}else if(monster.equals("Neo, o Espadachim Mágico")) {
+				
+			}
+		}else if(player.getArchetype() == 2) {
+			
+		}else if(player.getArchetype() == 3) {
+			
+		}else {
+			return "Carta inválida";
+		}
+		
+		return null;
+	}
 }

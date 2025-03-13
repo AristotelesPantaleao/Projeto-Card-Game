@@ -17,27 +17,27 @@ public class Phase {
 		return turn;
 	}
 	
-	public void isDrawPhase() {
+	public void isDrawPhase(Player player) {
 		
 	}
 	
-	public void isStandByPhase() {
+	public void isStandByPhase(Player player) {
 		
 	}
 	
-	public void isMainPhase1() {
+	public void isMainPhase1(Player player) {
 		
 	}
 	
-	public void isBattlePhase() {
+	public void isBattlePhase(Player player, Player player2) {
 		
 	}
 	
-	public void isMainPhase2() {
+	public void isMainPhase2(Player player) {
 		
 	}
 	
-	public void isEndPhase() {
+	public void isEndPhase(Player player) {
 		
 	}
 	
